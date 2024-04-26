@@ -1,0 +1,14 @@
+# 项目服务配置
+service:
+  name: "pyrethrum"
+  listen: ":8080"
+  version: "v1.0"
+
+# mysql配置
+mysql:
+  # 最大打开连接
+  maxOpenConns: 20
+  # 设置空闲连接
+  maxIdleConns: 20
+  # DSN
+  dsn: "root:123456@tcp(192.168.0.103:13306)/pyrethrum?parseTime=true&charset=utf8&loc=Local"

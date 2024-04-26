@@ -1,0 +1,22 @@
+package main
+
+import (
+	"github.com/provider-go/pyrethrum/config"
+	"github.com/provider-go/pyrethrum/core/global"
+	"github.com/provider-go/pyrethrum/models"
+	"github.com/provider-go/pyrethrum/router"
+	"os"
+)
+
+func main() {
+
+	// 加载配置
+	config.Start()
+	// 初始化mysql
+	models.NewMysql()
+	// 初始化根目录
+	global.RootDir, _ = os.Getwd()
+
+	// 启动服务并注册
+	router.RouterStart()
+}
