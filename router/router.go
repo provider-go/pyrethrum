@@ -25,6 +25,7 @@ func RouterStart() {
 	logger.Info("API server start", "listen", util.GetHostIp()+viper.GetString("service.listen"))
 	err := r.Run(viper.GetString("service.listen"))
 	if err != nil {
+		logger.Error("API server start", "err", err)
 		return
 	}
 }

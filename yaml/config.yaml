@@ -1,7 +1,7 @@
 # 项目服务配置
 service:
   name: "pyrethrum"
-  listen: ":8080"
+  listen: ":8082"
   version: "v1.0"
 
 # mysql配置
