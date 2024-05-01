@@ -3,6 +3,7 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	attachfile "github.com/provider-go/attach-file"
+	"github.com/provider-go/brand"
 	"github.com/provider-go/content"
 	"github.com/provider-go/district"
 	"github.com/provider-go/pyrethrum/core/global"
@@ -15,7 +16,8 @@ func ImportPlugin(r *gin.Engine) {
 	PluginInit(publicGroup, content.CreatePluginAndDB(global.DB),
 		user.CreatePluginAndDB(global.DB),
 		district.CreatePluginAndDB(global.DB),
-		attachfile.CreatePluginAndDB(global.DB))
+		attachfile.CreatePluginAndDB(global.DB),
+		brand.CreatePluginAndDB(global.DB))
 
 }
 

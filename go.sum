@@ -125,6 +125,8 @@ github.com/provider-go/attach-file v0.0.0-20240501060956-3a360025f24f h1:uGTWa4R
 github.com/provider-go/attach-file v0.0.0-20240501060956-3a360025f24f/go.mod h1:8sjQELwurdju4yq8s24GCT2834t8MajKu4Sk3MBxYRo=
 github.com/provider-go/attach-file v0.0.0-20240501061603-301015abc0d7 h1:m5BaZZoPaLVhyvta5BpBKxUHiPk9hAkQHAG00/SC+FY=
 github.com/provider-go/attach-file v0.0.0-20240501061603-301015abc0d7/go.mod h1:8sjQELwurdju4yq8s24GCT2834t8MajKu4Sk3MBxYRo=
+github.com/provider-go/brand v0.0.0-20240501074426-94f4a770af28 h1:BUSUt0Sg/Ocn+lveSz+9ex/d2tcvjgiUELTCUvOhRmo=
+github.com/provider-go/brand v0.0.0-20240501074426-94f4a770af28/go.mod h1:T5fdneGrrMTB8lsGer78H3fOJyjBWPdzuwahnjAHuPY=
 github.com/provider-go/content v0.0.0-20240426114652-7ebfcfcecce7 h1:2mWZBukmwl0P9fID+S9hbsKJ+mydQl3hoIbqAe7str0=
 github.com/provider-go/content v0.0.0-20240426114652-7ebfcfcecce7/go.mod h1:/i44HF7A4EMVjZ3/CzZdzH63f+JkCdeW44FmWJ6Ci9c=
 github.com/provider-go/district v0.0.0-20240428130153-1422dab9cc22 h1:v5F98gVup6/DP1QwwmvmJsDyu9p241Fxl26ewwOpsBc=

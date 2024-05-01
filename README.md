@@ -9,3 +9,5 @@
 ### 3 [地区插件](https://github.com/provider-go/district)
 
 ### 4 [文件插件](https://github.com/provider-go/attach-file)
+
+### 5 [品牌插件](https://github.com/provider-go/brand)
