@@ -3,9 +3,8 @@ package router
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/provider-go/pkg/go-logger"
-	util "github.com/provider-go/pkg/util/network"
-	manageRouter "github.com/provider-go/pyrethrum/router/manage"
+	"github.com/provider-go/pkg/logger"
+	util "github.com/provider-go/pkg/util"
 	"github.com/spf13/viper"
 )
 
@@ -14,11 +13,6 @@ func RouterStart() {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.New()
 	ImportPlugin(r)
-
-	ManageGroup := r.Group("manage")
-	{
-		manageRouter.InitPluginRouter(ManageGroup)
-	}
 
 	printRoutes(r)
 
