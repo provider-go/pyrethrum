@@ -3,19 +3,21 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	attachfile "github.com/provider-go/attach-file"
-	"github.com/provider-go/content"
-	"github.com/provider-go/district"
+	"github.com/provider-go/manager"
 	"github.com/provider-go/pyrethrum/core/global"
 	"github.com/provider-go/pyrethrum/core/protocol"
-	"github.com/provider-go/user"
+	"github.com/provider-go/sms"
+	"github.com/provider-go/sso"
+	"github.com/spf13/viper"
 )
 
 func ImportPlugin(r *gin.Engine) {
-	publicGroup := r.Group("")
-	PluginInit(publicGroup, content.CreatePluginAndDB(global.PluginConfig),
-		user.CreatePluginAndDB(global.PluginConfig),
-		district.CreatePluginAndDB(global.PluginConfig),
+	publicGroup := r.Group(viper.GetString("service.pre"))
+	PluginInit(publicGroup,
 		attachfile.CreatePluginAndDB(global.PluginConfig),
+		sms.CreatePluginAndDB(global.PluginConfig),
+		manager.CreatePluginAndDB(global.PluginConfig),
+		sso.CreatePluginAndDB(global.PluginConfig),
 	)
 }
 

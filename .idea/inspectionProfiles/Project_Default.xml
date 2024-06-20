@@ -1,0 +1,26 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="pyrethrum" />
+          <option value="pyrethrum" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="null:github.com/lestrrat-go/jwx:v1.2.28" />
+          <option value="null:github.com/jackc/pgx/v5:v5.4.3" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Not exploitable" />
+          <option value="Not exploitable" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

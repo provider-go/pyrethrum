@@ -16,5 +16,5 @@ func main() {
 	global.RootDir, _ = os.Getwd()
 
 	// 启动服务并注册
-	router.RouterStart()
+	router.StartRouter()
 }

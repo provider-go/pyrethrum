@@ -8,8 +8,8 @@ import (
 	"github.com/spf13/viper"
 )
 
-// RouterStart 启动路由
-func RouterStart() {
+// StartRouter 启动路由
+func StartRouter() {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.New()
 	ImportPlugin(r)
